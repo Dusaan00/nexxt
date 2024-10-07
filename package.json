@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
-    "deploy": "gh-pages -d out",
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out --dotfiles",
     "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
@@ -23,12 +22,14 @@
     "react": "^18",
     "react-dom": "^18",
     "react-locomotive-scroll": "^0.2.2",
-    "sass": "^1.79.4"
+    "sass": "^1.79.4",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "22.7.4",
     "@types/react": "18.3.11",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "eslint-config-next": "14.2.13",
+    "gh-pages": "^6.1.1"
   }
 }

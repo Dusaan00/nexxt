@@ -10,6 +10,7 @@ import { ReactLenis } from "../app/utils/lenis";
 import { Nunito, Josefin_Sans, Lato } from "next/font/google";
 
 export const metadata = {
+  metadataBase: new URL("https://ploty-grygov.cz"),
   title: "Ploty Grygov | Stavby oplocení | Ploty na klíč",
   description:
     "Provádíme stavby plotů na klíč, rekonstrujeme ploty, používáme vlastní kvalitní materiál. Ploty stavíme po celé Moravě",
