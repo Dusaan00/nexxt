@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../sass/_intro.scss";
+import "../Sass/_intro.scss";
 import Image from "next/image";
 import intro from "../Images/inst.webp";
 
