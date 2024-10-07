@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Dusaan00.github.io/nexxt",
+  "homepage": "https://Dusaan00.github.io",
   "name": "nextploty",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
-    "deploy": "next build && touch out/.nojekyll && gh-pages -d out --dotfiles",
+    "deploy": "next build && gh-pages -d out --dotfiles",
     "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
