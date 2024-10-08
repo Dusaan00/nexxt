@@ -6,7 +6,6 @@ import Hero from "./Components/Hero";
 import Features from "./Components/Features";
 import Typy from "./Components/Typy";
 import Instructions from "./Components/Instructions";
-import { useEffect } from "react";
 
 import React, { Component } from "react";
 import Lenis from "lenis";

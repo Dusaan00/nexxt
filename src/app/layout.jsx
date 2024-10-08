@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta httpEquiv="Content-Language" content="cs-CZ" />
+        <meta httpEquiv="Content-Language" content="cs" />
         <meta name="D.Kulíšek" content="Ploty Grygov" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
