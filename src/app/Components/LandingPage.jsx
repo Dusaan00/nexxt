@@ -1,3 +1,4 @@
+"use client";
 import "../Sass/_landingPage.scss";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
