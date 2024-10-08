@@ -11,14 +11,17 @@ import { Nunito, Josefin_Sans, Lato } from "next/font/google";
 
 export const metadata = {
   metadataBase: new URL("https://ploty-grygov.cz"),
-  title: "Ploty Grygov | Stavby oplocení | Ploty na klíč",
+  title: {
+    default: "Ploty Grygov | Stavby oplocení | Ploty na klíč",
+    template: "%s - Ploty Grygov",
+  },
   description:
-    "Provádíme stavby plotů na klíč, rekonstrujeme ploty, používáme vlastní kvalitní materiál. Ploty stavíme po celé Moravě",
+    "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
   robots: "index, follow",
   openGraph: {
     title: "Ploty Grygov",
     description:
-      "Provádíme stavby plotů na klíč, rekonstrujeme ploty, používáme vlastní kvalitní materiál. Ploty stavíme po celé Moravě.",
+      "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
     images: [{ url: "/logobiig.webp" }],
     url: "https://ploty-grygov.cz/",
     type: "website",

@@ -112,8 +112,8 @@ function LandingPage() {
           <figure className="gallery__item gallery__item--9">
             <Image
               src={img9}
-              alt="postavený plot z pletiva"
-              className="Oplocení z 3D panelů s podhrabovými deskami okolo rodinného domu"
+              alt="Oplocení z 3D panelů s podhrabovými deskami okolo rodinného domu"
+              className="gallery__img"
               onClick={() => openModal(img9)}
             />
           </figure>
