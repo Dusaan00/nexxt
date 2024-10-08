@@ -22,7 +22,7 @@ export const metadata = {
     title: "Ploty Grygov",
     description:
       "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
-    images: [{ url: "/logobiig.webp" }],
+    images: [{ url: "/opengraph-image.png" }],
     url: "https://ploty-grygov.cz/",
     type: "website",
     site_name: "ploty-grygov",
