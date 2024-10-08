@@ -19,7 +19,7 @@ export const metadata = {
     "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
   robots: "index, follow",
   openGraph: {
-    title: "Ploty Grygov",
+    title: "Ploty Grygov | Ploty na klíč | Stavby oplocení",
     description:
       "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
     images: [{ url: "/opengraph-image.png" }],
