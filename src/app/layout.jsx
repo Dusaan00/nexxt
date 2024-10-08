@@ -55,7 +55,7 @@ const lato = Lato({
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="cs-CZ"
+      lang="cs"
       className={`${nunito.variable} ${josefinSans.variable} ${lato.variable}`}
       style={{ scrollBehavior: "smooth" }}
     >
@@ -63,15 +63,8 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Language" content="cs-CZ" />
         <meta name="D.Kulíšek" content="Ploty Grygov" />
-        <meta
-          name="description"
-          content="Provádíme stavby plotů na klíč, rekonstrujeme ploty, používáme vlastní kvalitní materiál. Ploty stavíme po celé Moravě"
-        />
-
-        <link rel="canonical" href="https://ploty-grygov.cz/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
