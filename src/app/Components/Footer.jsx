@@ -56,7 +56,7 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <a href="#" className="footer__link" onClick={preventDefaultClick}>
+          <a href="mailto:plotygrygov@gmail.com" className="footer__link">
             <svg className="footer__icon">
               <use href="/sprite.svg#icon-email"></use>
             </svg>
