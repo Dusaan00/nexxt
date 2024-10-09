@@ -56,8 +56,7 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <a
-            target="_top"
+          <Link   
             href="mailto:plotygrygov@gmail.com"
             className="footer__link"
           >
@@ -65,7 +64,7 @@ function Footer() {
               <use href="/sprite.svg#icon-email"></use>
             </svg>
             <p className="address">plotygrygov@gmail.com</p>
-          </a>
+          </Link>
         </li>
 
         <li className="footer__item">
