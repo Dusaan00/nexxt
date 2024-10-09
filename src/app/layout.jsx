@@ -2,6 +2,8 @@ import "../app/styles/globals.scss";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
+import Head from "next/head";
+
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -62,14 +64,18 @@ export default function RootLayout({ children }) {
       className={`${nunito.variable} ${josefinSans.variable} ${lato.variable}`}
       style={{ scrollBehavior: "smooth" }}
     >
-      <head>
+      <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta httpEquiv="Content-Language" content="cs" />
         <meta name="D.Kulíšek" content="Ploty Grygov" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin="anonymous"
+        />
 
         <link rel="me" href="https://www.instagram.com/pletivo_grygov/" />
         <link rel="me" href="https://www.facebook.com/PletivoGrygov.cz" />
@@ -137,7 +143,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-      </head>
+      </Head>
       <ReactLenis root>
         <body>
           <GoogleTagManager gtmId="GTM-NNL3R8BB" />
