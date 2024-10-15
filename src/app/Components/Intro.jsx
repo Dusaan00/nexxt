@@ -1,28 +1,8 @@
-"use client";
-import React, { useState, useEffect } from "react";
 import "../Sass/_intro.scss";
-import Image from "next/image";
 import intro from "../Images/inst.webp";
+import Modal from "../functions/Modal";
 
 function Intro() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [selectedImage]);
-
-  const openModal = (imgSrc) => {
-    setSelectedImage(imgSrc);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
-
   return (
     <section className="section-intro" id="intro">
       <div className="intro-container">
@@ -67,27 +47,13 @@ function Intro() {
           </div>
         </div>
         <div className="intro-img">
-          <Image
+          <Modal
             src={intro}
             alt="Plot z drátěného pletiva mezi rodinnými domy v rezidenční oblasti"
             className="intro-photo"
-            onClick={() => openModal(intro)}
           />
         </div>
       </div>
-
-      {selectedImage && (
-        <div className="modal" onClick={closeModal}>
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <Image
-            className="modal-content"
-            src={selectedImage}
-            alt="Full view"
-          />
-        </div>
-      )}
     </section>
   );
 }

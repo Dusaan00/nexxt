@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Modal from "../functions/Modal";
 import "../Sass/_typy.scss";
 
 import typ1 from "../Images/1typ.webp";
@@ -16,24 +16,6 @@ function Typy() {
       top: 0,
       behavior: "smooth",
     });
-  };
-
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [selectedImage]);
-
-  const openModal = (imgSrc) => {
-    setSelectedImage(imgSrc);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
   };
 
   return (
@@ -55,11 +37,10 @@ function Typy() {
         <div className="typs-container">
           <div className="typ">
             <div className="typ__shape">
-              <Image
+              <Modal
                 src={typ1}
                 className="typ__photo"
                 alt="Ukázka typu plotu z klasického pletiva - Ploty Grygov"
-                onClick={() => openModal(typ1)}
                 loading="lazy"
               />
             </div>
@@ -77,11 +58,10 @@ function Typy() {
 
           <div className="typ">
             <div className="typ__shape">
-              <Image
+              <Modal
                 src={typ2}
                 className="typ__photo"
                 alt="Ukázka typu plotu z 3D/2D panelů - Ploty Grygov"
-                onClick={() => openModal(typ2)}
                 loading="lazy"
               />
             </div>
@@ -98,11 +78,10 @@ function Typy() {
 
           <div className="typ">
             <div className="typ__shape">
-              <Image
+              <Modal
                 src={typ3}
                 className="typ__photo"
                 alt="Ukázka typu plotu s podhrabovými deskami - Ploty Grygov"
-                onClick={() => openModal(typ3)}
                 loading="lazy"
               />
             </div>
@@ -123,11 +102,10 @@ function Typy() {
 
           <div className="typ">
             <div className="typ__shape">
-              <Image
+              <Modal
                 src={typ4}
                 className="typ__photo"
                 alt="Žeberkový plot - PLoty Grygov"
-                onClick={() => openModal(typ4)}
                 loading="lazy"
               />
             </div>
@@ -152,19 +130,6 @@ function Typy() {
           </Link>
         </div>
       </section>
-
-      {selectedImage && (
-        <div className="modal" onClick={closeModal}>
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <Image
-            className="modal-content"
-            src={selectedImage}
-            alt="Přiblížený obrázek typu plotu"
-          />
-        </div>
-      )}
     </div>
   );
 }
