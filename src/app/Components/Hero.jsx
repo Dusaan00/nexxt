@@ -1,19 +1,10 @@
-"use client";
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import ScrollToTop from "../functions/Scroller";
 import "../Sass/_hero.scss";
 import heroimg from "../Images/plotherobest.webp";
 
 function Hero() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <>
       <div id="hero" className="hero">
@@ -49,14 +40,9 @@ function Hero() {
                 brankou.<strong> Ploty stavíme na klíč. </strong>
               </p>
 
-              <Link
-                href="/"
-                className="btn--text btn--gallery"
-                onClick={() => scrollToTop()}
-                scroll={false}
-              >
+              <ScrollToTop href="/" className="btn--text btn--gallery">
                 Galerie staveb &rarr;
-              </Link>
+              </ScrollToTop>
 
               <h3 className="heading-tertiary stavime">
                 Pro koho ploty stavíme?

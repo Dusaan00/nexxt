@@ -1,4 +1,3 @@
-import React from "react";
 import "../Sass/_instructions.scss";
 
 function Instructions() {

@@ -4,15 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import "../Sass/_footer.scss";
 import logo from "../Images/Ploty-logo.webp";
+import ScrollToTop from "../functions/Scroller";
 
 function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   const preventDefaultClick = (e) => {
     e.preventDefault();
   };
@@ -22,7 +16,7 @@ function Footer() {
       <ul className="footer">
         <li className="footer__item">
           <div className="logo__container">
-            <Link href="/" onClick={() => scrollToTop()} scroll={false}>
+            <ScrollToTop href="/">
               <Image
                 src={logo}
                 alt="Ploty Grygov Logo"
@@ -30,7 +24,7 @@ function Footer() {
                 loading="lazy"
               />
               <p className="logo__text">PlotyGrygov</p>
-            </Link>
+            </ScrollToTop>
           </div>
         </li>
 
@@ -56,10 +50,7 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <Link   
-            href="mailto:plotygrygov@gmail.com"
-            className="footer__link"
-          >
+          <Link href="mailto:plotygrygov@gmail.com" className="footer__link">
             <svg className="footer__icon">
               <use href="/sprite.svg#icon-email"></use>
             </svg>
@@ -77,17 +68,12 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <Link
-            href="/"
-            className="footer__link"
-            onClick={() => scrollToTop()}
-            scroll={false}
-          >
+          <ScrollToTop href="/" className="footer__link">
             <svg className="footer__icon">
               <use href="/sprite.svg#icon-perm_media"></use>
             </svg>
             <p className="address galeria">Galerie staveb</p>
-          </Link>
+          </ScrollToTop>
         </li>
       </ul>
       <p className="copyright">&copy; Copyright 2024 PlotyGrygov.cz</p>

@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import Modal from "../functions/Modal";
 import "../Sass/_typy.scss";
@@ -9,15 +8,9 @@ import typ2 from "../Images/2typ.webp";
 import typ3 from "../Images/typ3.webp";
 import typ4 from "../Images/4typ.webp";
 import background from "../Images/backgrund2.webp";
+import ScrollToTop from "../functions/Scroller";
 
 function Typy() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="section-container">
       <section className="section-typy">
@@ -120,14 +113,9 @@ function Typy() {
           </div>
         </div>
         <div className="button-container">
-          <Link
-            href="/"
-            className="btn--typ"
-            onClick={() => scrollToTop()}
-            scroll={false}
-          >
+          <ScrollToTop href="/" className="btn--typ">
             Galerie staveb &rarr;
-          </Link>
+          </ScrollToTop>
         </div>
       </section>
     </div>

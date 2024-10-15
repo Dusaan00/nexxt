@@ -1,4 +1,3 @@
-import React from "react";
 import "../Sass/_features.scss";
 
 function Features() {
