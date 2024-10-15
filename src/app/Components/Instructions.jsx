@@ -1,4 +1,5 @@
 import "../Sass/_instructions.scss";
+import React from "react";
 
 function Instructions() {
   return (
