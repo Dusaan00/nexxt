@@ -11,6 +11,8 @@ import img9 from "../Images/99.webp";
 import img10 from "../Images/10.webp";
 import img11 from "../Images/11.webp";
 import img12 from "../Images/12.webp";
+import beton1 from "../Images/beton1.jpg";
+import beton2 from "../Images/beton2.jpg";
 import Modal from "../functions/Modal";
 
 function LandingPage() {
@@ -92,7 +94,7 @@ function LandingPage() {
 
           <figure className="gallery__item gallery__item--10">
             <Modal
-              src={img10}
+              src={beton2}
               alt="Montáž brány v průmyslovém objektu"
               className="gallery__img"
             />
@@ -100,7 +102,7 @@ function LandingPage() {
 
           <figure className="gallery__item gallery__item--11">
             <Modal
-              src={img11}
+              src={beton1}
               alt="Běžné oplocení z drátěného pletiva s brankou kolem sportoviště"
               className="gallery__img"
             />

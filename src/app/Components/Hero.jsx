@@ -33,12 +33,12 @@ function Hero() {
                 Jaké typy plotů stavíme?
               </h3>
               <p className="paragraph">
-                Zaměřujeme se primárně na stavbu oplocení z klasického pletiva,
-                dále oplocení z 3D/2D panelů, ploty z pletiva a z 3D/2D panelů
-                můžeme postavit i společně s podhrabovými deskami, dále
-                provádíme i montáže žebérkových plotů. Plot Vám samořejmě na
-                základě Vašich požadavků postavíme společně s bránou nebo
-                brankou.<strong> Ploty stavíme na klíč. </strong>
+                Zaměřujeme se primárně na stavby oplocení z klasického pletiva,
+                z 3D/2D panelů a stavíme i betonové ploty. Oplocení Vám můžeme
+                postavit i s podhrabovými deskami. Plot Vám samořejmě na základě
+                Vašich požadavků postavíme společně s bránou nebo brankou, je
+                možnost instalace chytrého odemykání.
+                <strong> Ploty stavíme na klíč. </strong>
               </p>
 
               <ScrollToTop href="/" className="btn--text btn--gallery">

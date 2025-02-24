@@ -76,7 +76,7 @@ function Footer() {
           </ScrollToTop>
         </li>
       </ul>
-      <p className="copyright">&copy; Copyright 2024 PlotyGrygov.cz</p>
+      <p className="copyright">&copy; Copyright 2025 PlotyGrygov.cz</p>
     </footer>
   );
 }

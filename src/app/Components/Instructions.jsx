@@ -19,8 +19,8 @@ function Instructions() {
         plotu. V průběhu stavby komunikace nadále probíhá.
         <strong>
           {" "}
-          Naše firma se zaměřuje na stavbu plotů výhradně z pletiva, z 3D/2D
-          panelů a ploty s podhrabovými deskami.
+          Naše firma se zaměřuje na stavby betonových plotů, plotů z pletiva, z
+          3D/2D panelů a ploty s podhrabovými deskami.
         </strong>{" "}
         K postavenému plotu Vám samozřejmě nainstalujeme i bránu/branku na
         základě Vašich požadavků.{" "}

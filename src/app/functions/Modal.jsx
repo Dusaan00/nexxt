@@ -2,6 +2,8 @@
 import "../Sass/_landingPage.scss";
 import "../Sass/_intro.scss";
 import "../Sass/_typy.scss";
+import "../Sass/_galleryPletivo.scss";
+import "../Sass/_galleryBeton.scss";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 

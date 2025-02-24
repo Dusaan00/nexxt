@@ -41,8 +41,8 @@ function Intro() {
               První den stavby většinou probíhá měření pozemku a vrtání děr na
               sloupky. Další den stavby se většinou betonují sloupky do děr a
               případně pokládají podhrabové desky. Poslední den stavby
-              natahujeme plot z pletiva nebo montujeme 3D/2D panely, k hotovému
-              oplocení potom instalujeme bránu.
+              natahujeme plot z pletiva, montujeme 3D/2D panely, nebo stavíme
+              betonový plot, k hotovému oplocení potom instalujeme bránu.
             </p>
           </div>
         </div>
