@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import PletivoImg from "../Images/galeryimg.webp";
 import beton2 from "../Images/beton2.jpg";
