@@ -16,6 +16,14 @@
   font-size: 38px;
   font-weight: bold;
   color: black;
+
+  @media (max-width: 1104px) {
+    font-size: 33px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 29px;
+  }
 }
 
 .gallery-grid {
@@ -26,6 +34,15 @@
   width: 100%; /* Full width */
   max-width: 1200px;
   justify-items: center;
+
+  @media (max-width: 1104px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 35px;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
 }
 
 .gallery-item {
@@ -48,6 +65,12 @@
   &:hover {
     transform: scale(1.07);
     border-radius: 5px;
+  }
+
+  @media (max-width: 700px) {
+    &:hover {
+      transform: none;
+    }
   }
 }
 
