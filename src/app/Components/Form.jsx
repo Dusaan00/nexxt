@@ -96,7 +96,9 @@ function Form() {
         </div>
         <div className="right-side">
           <div className="topic-text">Zaslání poptávky</div>
-          <p>Zde můžete zadat nezávaznou poptávku, odpovíme Vám do 24 hodin.</p>
+          <p className="popis">
+            Zde můžete zadat nezávaznou poptávku, odpovíme Vám do 24 hodin.
+          </p>
 
           <form onSubmit={handleSubmit}>
             <div className="input-box">
@@ -167,6 +169,10 @@ function Form() {
             <div className="form-button">
               <input type="submit" value="Odeslat poptávku"></input>
             </div>
+            <p className="privacy-text">
+              Vaše údaje nesdílíme s třetími stranami. Vaše údaje jsou použity
+              pouze pro zpracování odpovědi na Vaši poptávku.
+            </p>
           </form>
         </div>
       </div>

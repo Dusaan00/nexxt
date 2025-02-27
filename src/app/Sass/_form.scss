@@ -73,6 +73,10 @@
   font-weight: 600;
 }
 
+.popis {
+  font-size: 14px;
+}
+
 .topic-text {
   color: black;
   font-size: 1.8rem;
@@ -187,4 +191,13 @@ textarea:invalid[focused="true"] ~ .achtung {
     width: 100%;
     margin-left: 0;
   }
+}
+
+.privacy-text {
+  display: block; /* Ensures it takes full width */
+  white-space: normal;
+  font-size: 16px;
+  color: #666;
+  padding-top: 40px;
+  text-align: left;
 }
