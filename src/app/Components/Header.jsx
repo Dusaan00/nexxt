@@ -48,7 +48,7 @@ function Header() {
             </Link>
           </li>
           <li className="user-nav__box--item">
-            <Link href="/gallery" className="user-nav__box--link">
+            <Link href="/Galerie" className="user-nav__box--link">
               Galerie staveb
             </Link>
           </li>

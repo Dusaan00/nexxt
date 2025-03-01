@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ScrollToTop from "../functions/Scroller";
 import "../Sass/_hero.scss";
 import heroimg from "../Images/plotherobest.webp";
 
@@ -41,9 +40,9 @@ function Hero() {
                 <strong> Ploty stavíme na klíč. </strong>
               </p>
 
-              <ScrollToTop href="/" className="btn--text btn--gallery">
+              <Link href="/Galerie" className="btn--text btn--gallery">
                 Galerie staveb &rarr;
-              </ScrollToTop>
+              </Link>
 
               <h3 className="heading-tertiary stavime">
                 Pro koho ploty stavíme?

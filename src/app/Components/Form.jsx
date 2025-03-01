@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../Sass/_form.scss";
+import Link from "next/link";
 
 function Form() {
   const [name, setName] = useState("");
@@ -172,6 +173,10 @@ function Form() {
             <p className="privacy-text">
               Vaše údaje nesdílíme s třetími stranami. Vaše údaje jsou použity
               pouze pro zpracování odpovědi na Vaši poptávku.
+              <br />
+              <Link href="/PrivacyPolicy" className="privacy-link">
+                <u>Ochrana osobních údajů</u>
+              </Link>
             </p>
           </form>
         </div>

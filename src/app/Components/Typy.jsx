@@ -8,7 +8,7 @@ import typ2 from "../Images/2typ.webp";
 import typ3 from "../Images/typ3.webp";
 import typ4 from "../Images/4typ.webp";
 import background from "../Images/backgrund2.webp";
-import ScrollToTop from "../functions/Scroller";
+import Link from "next/link";
 
 function Typy() {
   return (
@@ -113,9 +113,9 @@ function Typy() {
           </div>
         </div>
         <div className="button-container">
-          <ScrollToTop href="/" className="btn--typ">
+          <Link href="/Galerie" className="btn--typ">
             Galerie staveb &rarr;
-          </ScrollToTop>
+          </Link>
         </div>
       </section>
     </div>

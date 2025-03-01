@@ -21,7 +21,7 @@ import img018 from "../Images/galGates/018.webp";
 import img019 from "../Images/galGates/019.webp";
 import img020 from "../Images/galGates/020.webp";
 
-function GatesGallery() {
+function GalerieBrany() {
   const imagePaths = [
     { src: img001, alt: "Zelená branka k plotu z pletiva u firemního objektu" },
     { src: img002, alt: "Brána kolem objektu v průmyslové oblasti" },
@@ -81,4 +81,4 @@ function GatesGallery() {
   );
 }
 
-export default GatesGallery;
+export default GalerieBrany;

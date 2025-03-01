@@ -68,12 +68,12 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <ScrollToTop href="/" className="footer__link">
+          <Link href="/Galerie" className="footer__link">
             <svg className="footer__icon">
               <use href="/sprite.svg#icon-perm_media"></use>
             </svg>
             <p className="address galeria">Galerie staveb</p>
-          </ScrollToTop>
+          </Link>
         </li>
       </ul>
       <p className="copyright">&copy; Copyright 2025 PlotyGrygov.cz</p>

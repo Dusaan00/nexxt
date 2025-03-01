@@ -13,7 +13,7 @@ function Gallery() {
       <h1 className="gallery-title">Naše stavby plotů na klíč:</h1>
       <div className="gallery-grid">
         <div className="gallery-item">
-          <Link href="/pletivoGallery">
+          <Link href="/PlotyPletivo">
             <Image
               src={PletivoImg}
               className="gallery-photo"
@@ -23,7 +23,7 @@ function Gallery() {
           <h2 className="gallery-subtitle">Ploty z klasického pletiva</h2>
         </div>
         <div className="gallery-item">
-          <Link href="/betonGallery">
+          <Link href="/BetonovePloty">
             <Image
               src={beton2}
               className="gallery-photo"
@@ -33,7 +33,7 @@ function Gallery() {
           <h2 className="gallery-subtitle">Betonové ploty</h2>
         </div>
         <div className="gallery-item">
-          <Link href="/3dGallery">
+          <Link href="/PlotyPanely">
             <Image
               src={PanelImg}
               className="gallery-photo"
@@ -43,7 +43,7 @@ function Gallery() {
           <h2 className="gallery-subtitle">Ploty z 3D/2D panelů</h2>
         </div>
         <div className="gallery-item">
-          <Link href="/gatesGallery">
+          <Link href="/GalerieBrany">
             <Image
               src={GateImg}
               className="gallery-photo"
@@ -53,7 +53,7 @@ function Gallery() {
           <h2 className="gallery-subtitle">Brány a branky k oplocení</h2>
         </div>
         <div className="gallery-item">
-          <Link href="/othersGallery">
+          <Link href="/GalerieOstatni">
             <Image
               src={OstatniImg}
               className="gallery-photo"
