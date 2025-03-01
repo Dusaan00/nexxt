@@ -29,7 +29,12 @@ function Footer() {
         </li>
 
         <li className="footer__item">
-          <a href="#" className="footer__link" onClick={preventDefaultClick}>
+          <Link
+            href="https://www.google.com/maps/place/Ploty+Grygov+s.r.o./@49.5353379,17.30746,16.25z/data=!4m14!1m7!3m6!1s0x47125315a4d345d7:0xdff9a1ca55358255!2sPloty+Grygov+s.r.o.!8m2!3d49.5351327!4d17.3038416!16s%2Fg%2F11whxk9kf_!3m5!1s0x47125315a4d345d7:0xdff9a1ca55358255!8m2!3d49.5351327!4d17.3038416!16s%2Fg%2F11whxk9kf_?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
+            className="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg className="footer__icon">
               <use href="/sprite.svg#icon-location_on"></use>
             </svg>
@@ -37,7 +42,7 @@ function Footer() {
               <span>Za Tratí 255,</span>
               <span>Grygov 783 73</span>
             </p>
-          </a>
+          </Link>
         </li>
 
         <li className="footer__item">

@@ -166,7 +166,7 @@ function PrivacyPolicy() {
           e-mailovou adresu, kterou jste správci poskytl/a.
         </p>
         <p className="pgraph">
-          <strong>Tyto podmínky nabývají účinnosti dnem 01.09.2024</strong>
+          <strong>Tyto podmínky nabývají účinnosti dnem 09.06.2022</strong>
         </p>
       </div>
     </div>
