@@ -21,9 +21,9 @@ function Features() {
           </svg>
           <h4 className="heading--4">Odborně poradíme se stavbou plotu</h4>
           <p className="feature__text">
-            Jelikož stavíme ploty primárně z klasického pletiva a z 3D/2D
-            panelů, tak Vám dokážeme vhodně poradit na základě Vašich požadavků
-            a očekávání.
+            Jelikož jsme zaměřeni na stavby oplocení primárně z klasického
+            pletiva, betonové ploty a panelové ploty, tak Vám dokážeme vhodně
+            poradit na základě Vašich požadavků a očekávání.
           </p>
         </div>
 
