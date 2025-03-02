@@ -24,6 +24,20 @@
   }
 }
 
+.pletivo-gallery-text {
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  max-width: 1500px;
+  text-align: left;
+  padding: 10px 0;
+  margin-bottom: 15px;
+
+  @media (max-width: 1554px) {
+    max-width: 1200px;
+  }
+}
+
 .pletivo-gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

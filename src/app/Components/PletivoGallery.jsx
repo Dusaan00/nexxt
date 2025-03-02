@@ -303,6 +303,15 @@ function PletivoGallery() {
   return (
     <div className="pletivo-gallery-container">
       <h1 className="pletivo-gallery-title">Oplocení z klasického pletiva</h1>
+      <p className="pletivo-gallery-text">
+        Zde je přehled některých plotů z klasického pletiva, které stavěla naše
+        firma. Pletivo si sami vyrábíme už od roku 1930. Oplocení z klasického
+        pletiva se hodí jak při oplocení firemních pozemků, tak při oplocení
+        rodinných domů a zahrad. Plot z pleteného pletiva je cenově přiznívé
+        řešení oplocení, které zároveň spolehlivě plní svou funkci. Jelikož
+        ploty z pletiva stavíme už velice dlouho, jsme schopni odborně poradit s
+        výběrem a implementací řešení oplocení.
+      </p>
       <div className="pletivo-gallery-grid">
         {imagePaths.map((image, index) => (
           <Modal
