@@ -81,6 +81,17 @@ function Footer() {
           </Link>
         </li>
       </ul>
+
+      <ul className="footer-legal">
+        <li className="footer-legal__item">
+          <Link href="/PrivacyPolicy" className="footer-legal__link">
+            <svg className="footer-legal__icon">
+              <use href="/sprite.svg#icon-policy-svgrepo-com"></use>
+            </svg>
+            <p className="legal-text">GDPR</p>
+          </Link>
+        </li>
+      </ul>
       <p className="copyright">&copy; Copyright 2025 PlotyGrygov.cz</p>
     </footer>
   );
