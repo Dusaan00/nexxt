@@ -12,9 +12,9 @@ function Modal({ src, alt, className }) {
 
   useEffect(() => {
     if (selectedImage) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("modal-open");
     } else {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove("modal-open");
     }
   }, [selectedImage]);
 
@@ -28,14 +28,31 @@ function Modal({ src, alt, className }) {
 
   return (
     <>
-      <Image src={src} alt={alt} className={className} onClick={openModal} />
+      <Image
+        src={src}
+        alt={alt}
+        className={className}
+        fill
+        width={350}
+        height={300}
+        placeholder="blur"
+        onClick={openModal}
+      />
 
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
           <span className="close" onClick={closeModal}>
             &times;
           </span>
-          <Image className="modal-content" src={selectedImage} alt={alt} />
+          <Image
+            className="modal-content"
+            src={selectedImage}
+            alt={alt}
+            layout="fill"
+            objectFit="cover"
+            width={800}
+            height={600}
+          />
         </div>
       )}
     </>
