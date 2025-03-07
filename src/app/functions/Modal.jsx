@@ -32,7 +32,6 @@ function Modal({ src, alt, className }) {
         src={src}
         alt={alt}
         className={className}
-        fill
         width={350}
         height={300}
         placeholder="blur"
@@ -48,7 +47,6 @@ function Modal({ src, alt, className }) {
             className="modal-content"
             src={selectedImage}
             alt={alt}
-            layout="fill"
             objectFit="cover"
             width={800}
             height={600}
