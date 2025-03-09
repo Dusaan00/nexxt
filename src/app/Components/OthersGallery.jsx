@@ -1,5 +1,6 @@
 import "../Sass/_galleryOthers.scss";
 import Modal from "../functions/Modal";
+import Link from "next/link";
 import img001 from "../Images/galOthers/001.webp";
 import img002 from "../Images/galOthers/002.webp";
 import img003 from "../Images/galOthers/003.webp";
@@ -37,7 +38,15 @@ function OthersGallery() {
 
   return (
     <div className="others-gallery-container">
-      <h1 className="others-gallery-title">Naše ostatní práce</h1>
+      <div className="centered-text-container-others">
+        <div className="others-gallery-texts">
+          <h1 className="others-gallery-title">Naše ostatní práce</h1>
+          <Link href="/form">
+            <button className="others-gallery-button">Odeslat poptávku</button>
+          </Link>
+          <p className="others-gallery-text"></p>
+        </div>
+      </div>
       <div className="others-gallery-grid">
         {imagePaths.map((image, index) => (
           <Modal

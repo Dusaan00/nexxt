@@ -1,5 +1,6 @@
 import "../Sass/_galleryPanely.scss";
 import Modal from "../functions/Modal";
+import Link from "next/link";
 import img001 from "../Images/gal3D/001.webp";
 import img002 from "../Images/gal3D/002.webp";
 import img003 from "../Images/gal3D/003.webp";
@@ -104,7 +105,15 @@ function ddGallery() {
   ];
   return (
     <div className="panely-gallery-container">
-      <h1 className="panely-gallery-title">Ploty z 3D/2D panelů</h1>
+      <div className="centered-text-container-panely">
+        <div className="panely-gallery-texts">
+          <h1 className="panely-gallery-title">Ploty z 3D/2D panelů</h1>
+          <Link href="/form">
+            <button className="panely-gallery-button">Odeslat poptávku</button>
+          </Link>
+          <p className="panely-gallery-text"></p>
+        </div>
+      </div>
       <div className="panely-gallery-grid">
         {imagePaths.map((image, index) => (
           <Modal

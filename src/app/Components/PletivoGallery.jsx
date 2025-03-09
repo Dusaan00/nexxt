@@ -1,5 +1,6 @@
 import "../Sass/_galleryPletivo.scss";
 import Modal from "../functions/Modal";
+import Link from "next/link";
 import img001 from "../Images/galPletivo/001.webp";
 import img002 from "../Images/galPletivo/002.webp";
 import img003 from "../Images/galPletivo/003.webp";
@@ -302,16 +303,25 @@ function PletivoGallery() {
 
   return (
     <div className="pletivo-gallery-container">
-      <h1 className="pletivo-gallery-title">Oplocení z klasického pletiva</h1>
-      <p className="pletivo-gallery-text">
-        Zde je přehled některých plotů z klasického pletiva, které stavěla naše
-        firma. Pletivo si sami vyrábíme už od roku 1930. Oplocení z klasického
-        pletiva se hodí jak při oplocení firemních pozemků, tak při oplocení
-        rodinných domů a zahrad. Plot z pleteného pletiva je cenově přiznívé
-        řešení oplocení, které zároveň spolehlivě plní svou funkci. Jelikož
-        ploty z pletiva stavíme už velice dlouho, jsme schopni odborně poradit s
-        výběrem a implementací řešení oplocení.
-      </p>
+      <div className="centered-text-container">
+        <div className="pletivo-gallery-texts">
+          <h1 className="pletivo-gallery-title">
+            Oplocení z klasického pletiva
+          </h1>
+          <Link href="/form">
+            <button className="pletivo-gallery-button">Odeslat poptávku</button>
+          </Link>
+          <p className="pletivo-gallery-text">
+            Zde je přehled některých plotů z klasického pletiva, které stavěla
+            naše firma. Pletivo si sami vyrábíme už od roku 1930. Oplocení z
+            klasického pletiva se hodí jak při oplocení firemních pozemků, tak
+            při oplocení rodinných domů a zahrad. Plot z pleteného pletiva je
+            cenově přiznívé řešení oplocení, které zároveň spolehlivě plní svou
+            funkci. Jelikož ploty z pletiva stavíme už velice dlouho, jsme
+            schopni odborně poradit s výběrem a implementací řešení oplocení.
+          </p>
+        </div>
+      </div>
       <div className="pletivo-gallery-grid">
         {imagePaths.map((image, index) => (
           <Modal

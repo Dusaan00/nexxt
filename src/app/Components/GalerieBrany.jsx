@@ -1,5 +1,6 @@
 import "../Sass/_galleryGates.scss";
 import Modal from "../functions/Modal";
+import Link from "next/link";
 import img001 from "../Images/galGates/001.webp";
 import img002 from "../Images/galGates/002.webp";
 import img004 from "../Images/galGates/004.webp";
@@ -65,7 +66,15 @@ function GalerieBrany() {
 
   return (
     <div className="gates-gallery-container">
-      <h1 className="gates-gallery-title">Brány a branky k oplocení</h1>
+      <div className="centered-text-container-gates">
+        <div className="gates-gallery-texts">
+          <h1 className="gates-gallery-title">Brány a branky k oplocení</h1>
+          <Link href="/form">
+            <button className="gates-gallery-button">Odeslat poptávku</button>
+          </Link>
+          <p className="gates-gallery-text"></p>
+        </div>
+      </div>
       <div className="gates-gallery-grid">
         {imagePaths.map((image, index) => (
           <Modal
