@@ -7,6 +7,7 @@ import typ1 from "../Images/1typ.webp";
 import typ2 from "../Images/2typ.webp";
 import typ3 from "../Images/typ3.webp";
 import typ4 from "../Images/4typ.webp";
+import typ5 from "../Images/galBeton/002.webp";
 import background from "../Images/backgrund2.webp";
 import Link from "next/link";
 
@@ -63,8 +64,8 @@ function Typy() {
               <p>
                 Ploty z 3D/2D panelů mají velmi moderní vzhled, jsou pevné,
                 stabilní a velice odolné, jsou však dražší než ploty z
-                klasického pletiva. 3D panely poskytují velice hezkou vizuální
-                bariéru.
+                klasického pletiva. 3D panely poskytnou Vašemu pozemku velice
+                hezkou vizuální bariéru.
               </p>
             </div>
           </div>
@@ -108,6 +109,28 @@ function Typy() {
                 Žebérkové ploty jsou vyrobené z kovu, jsou velice odolné a
                 trvanlivé, tyto ploty jsou vhodné k zabezpečení prostor v
                 průmyslových, komerčních i rezidenčních prostorách.
+              </p>
+            </div>
+          </div>
+
+          <div className="typ">
+            <div className="typ__shape">
+              <Modal
+                src={typ5}
+                className="typ__photo"
+                alt="Žeberkový plot - PLoty Grygov"
+                loading="lazy"
+              />
+            </div>
+            <div className="typ__text">
+              <h3 className="heading-tertiary">Betonové ploty</h3>
+              <p className="zeb">
+                Betonové ploty jsou skvělým řešením oplocení pozemku pro
+                zákazníky, pro které je důležité především soukromí. Betonové
+                ploty také zajišťují vysokou odolnost proti povětrnostním
+                vlivům, velmi dlouhou životnost a minimální údržbu. Betonové
+                ploty jsou vhodné jak pro rezidenční oblasti, tak pro průmyslové
+                a komerční prostory.
               </p>
             </div>
           </div>
