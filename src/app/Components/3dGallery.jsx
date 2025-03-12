@@ -111,7 +111,18 @@ function ddGallery() {
           <Link href="/form">
             <button className="panely-gallery-button">Odeslat poptávku</button>
           </Link>
-          <p className="panely-gallery-text"></p>
+          <p className="panely-gallery-text">
+            Oplocení z 3D panelů představuje moderní vzhled, takže bude dobře
+            ladit jak se stavbami v rezideční oblasti, tak kolem průmýslových
+            objektů, plot z 3D panelů však vyjde o něco dráž než plot z běžného
+            pletiva. Tento typ plotu se Vám bude hodit na místech, kde chcete
+            nechat pronikat světlo, takže např. kolem zahrad či sportovišť.
+            Oplocení z 3D panelů Vám můžeme postavit v různých barvách a v
+            různých typech, plot z 3D panelů se dá doplnit o podhrabové desky.
+            Ploty z 3D panelů zajišťují dlouhou životnost oplocení a odolnost
+            proti korozi. Můžeme nabídnout různé druhy a výšky panelů,
+            kontaktujte nás pro další informace.
+          </p>
         </div>
       </div>
       <div className="panely-gallery-grid">

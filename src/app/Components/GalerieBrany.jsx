@@ -72,7 +72,16 @@ function GalerieBrany() {
           <Link href="/form">
             <button className="gates-gallery-button">Odeslat poptávku</button>
           </Link>
-          <p className="gates-gallery-text"></p>
+          <p className="gates-gallery-text">
+            K Vašemu plotu samozřejmě i postavíme bránu/branku dle Vašich přání.
+            Kromě výroby pletiva se již dlouhou dobu zabýváme i celkovou
+            zámečnickou výrobou, proto jsme schopni Vám k plotu poskytnout různé
+            druhy typů bran, velikostí a odemykaní přímo z naší vlastní výroby a
+            také především odborně poradit při výběru a implementaci. Možnost
+            chytrého odemykání bran. Kontaktujte nás s Vaším požadavkem na bránu
+            a její odemykání a my Vás informujeme o konkrétních možnostech a
+            řešeních.
+          </p>
         </div>
       </div>
       <div className="gates-gallery-grid">

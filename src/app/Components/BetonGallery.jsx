@@ -18,7 +18,17 @@ function BetonGallery() {
           <Link href="/form">
             <button className="beton-gallery-button">Odeslat poptávku</button>
           </Link>
-          <p className="beton-gallery-text"></p>
+          <p className="beton-gallery-text">
+            Stavby betonových plotů realizujeme z důvodu jejich zřejmých a
+            žádaných vlastností, jako jsou poskytnutí soukromí, životnost a
+            odolnost. Betonový plot je skvělé řešení pokud Vám záleží na
+            soukromí, zároveň do určité míry dokáže i tlumit hluk z vnějšího
+            okolí, hodí se proto hlavně kolem silnic a v rušnějších oblastech.
+            Jsou velice odolné (tím pádem můžete počítat s dlouhou životností) a
+            zároveň nevyžadují téměř žádné udržování. Betonové ploty se
+            instalují relativně snadno, díky tomu že se panely dosazují mezi
+            sloupky, proto jejich montáž netrvá dlouho.
+          </p>
         </div>
       </div>
       <div className="beton-gallery-grid">

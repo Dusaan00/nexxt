@@ -40,6 +40,7 @@ body.modal-open {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  margin-bottom: 15px;
 
   &:hover {
     transform: scale(1.05);

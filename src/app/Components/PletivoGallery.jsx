@@ -319,6 +319,10 @@ function PletivoGallery() {
             cenově přiznívé řešení oplocení, které zároveň spolehlivě plní svou
             funkci. Jelikož ploty z pletiva stavíme už velice dlouho, jsme
             schopni odborně poradit s výběrem a implementací řešení oplocení.
+            Můžeme nabídnout mnoho různých typů pletiv pro realizaci oplocení,
+            kontaktujte nás pro zjištění konkrétních možností. Stejně tak i
+            pletivo prodáváme, proto pokud si stavbu plotu chcete vyřešit po
+            svém, můžete si od nás materiál nakoupit.
           </p>
         </div>
       </div>

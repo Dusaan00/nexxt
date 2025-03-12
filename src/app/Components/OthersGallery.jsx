@@ -44,7 +44,13 @@ function OthersGallery() {
           <Link href="/form">
             <button className="others-gallery-button">Odeslat poptávku</button>
           </Link>
-          <p className="others-gallery-text"></p>
+          <p className="others-gallery-text">
+            Zde je galerie našich ostatních prací, dlouhou dobu se mimo výrobu
+            pletiva zabýváme zámečnickou výrobou, proto jsme schopni pro Vás
+            zrealizovat různé práce v oblasti zámečnictví. Na obrázcích níže
+            jsou zobrazeny fotky některých našich realizovaných prací/výrobků
+            mimo ploty samotné.
+          </p>
         </div>
       </div>
       <div className="others-gallery-grid">
