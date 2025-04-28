@@ -1,3 +1,4 @@
+import Achtung from "./Components/Achtung";
 import MainTitle from "./Components/MainTitle";
 import LandingPage from "./Components/LandingPage";
 import Intro from "./Components/Intro";
@@ -9,6 +10,7 @@ import Instructions from "./Components/Instructions";
 export default function Home() {
   return (
     <div>
+      <Achtung />
       <MainTitle />
       <LandingPage />
       <Intro id="intro" />
