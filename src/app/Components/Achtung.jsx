@@ -5,8 +5,8 @@ function Achtung() {
     <div className="achtung-container">
       <div className="achtung-content">
         <p className="achtung_text">
-          Ve dnech 2.5. 2025 a 9.5. 2025 budeme mít <strong>zavřeno</strong>.
-          Děkujeme za pochopení.
+          Dne 9.5. 2025 budeme mít <strong>zavřeno</strong>. Děkujeme za
+          pochopení.
         </p>
         <p className="achtung_text">
           Volné termíny na stavby oplocení máme převážně až od července/srpna
