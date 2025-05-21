@@ -7,7 +7,7 @@ function Achtung() {
         <p className="achtung_text">
           Volné termíny na stavby oplocení máme převážně až od července/srpna
           2025, termíny v květnu ani červnu nemůžeme zaručit. Odběr materiálu je
-          možný stále. Děkujeme za pochopení.
+          možný neustále. Děkujeme za pochopení.
         </p>
       </div>
     </div>
