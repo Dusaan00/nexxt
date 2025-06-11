@@ -5,9 +5,7 @@ function Achtung() {
     <div className="achtung-container">
       <div className="achtung-content">
         <p className="achtung_text">
-          Volné termíny na stavby oplocení máme převážně až od července/srpna
-          2025, termíny v květnu ani červnu nemůžeme zaručit. Odběr materiálu je
-          možný neustále. Děkujeme za pochopení.
+          16.6. - 24.6. budeme mít zavřeno. Děkujeme za pochopení.
         </p>
       </div>
     </div>
