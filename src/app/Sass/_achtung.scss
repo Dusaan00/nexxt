@@ -3,7 +3,7 @@
 .achtung-container {
   margin: 0 auto;
   margin-top: 20px;
-  width: 35%;
+  width: 30%;
   background-color: #fff9db;
   border: solid 1px #54483a;
   border-radius: 4px;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
+  min-height: 8vh;
 
   @media (max-width: 1200px) {
     width: 50%;
@@ -50,6 +50,16 @@
 
 .achtung_text {
   margin-bottom: 5px;
+  font-size: 2.5rem;
+  line-height: 1.3;
+
+  @media (max-width: 900px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.95rem;
+  }
 
   @media (max-width: 480px) {
     font-size: 1.3rem;
