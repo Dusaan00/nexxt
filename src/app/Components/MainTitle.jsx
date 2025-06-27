@@ -6,7 +6,7 @@ function MainTitle() {
     <section className="main-title-section" id="main">
       <h1 className="heading-primary">
         <span className="heading-primary--main">
-          <span className="heading-primary--bold">Ploty</span>{" "}
+          <span className="heading-primary--bold">Pletivo</span>{" "}
           <span className="heading-primary--space">Grygov</span>
         </span>
         <span className="heading-primary--sub">

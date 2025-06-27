@@ -41,9 +41,6 @@ function OthersGallery() {
       <div className="centered-text-container-others">
         <div className="others-gallery-texts">
           <h1 className="others-gallery-title">Naše ostatní práce</h1>
-          <Link href="/form">
-            <button className="others-gallery-button">Odeslat poptávku</button>
-          </Link>
           <p className="others-gallery-text">
             Zde je galerie našich ostatních prací, dlouhou dobu se mimo výrobu
             pletiva zabýváme zámečnickou výrobou, proto jsme schopni pro Vás
@@ -51,6 +48,9 @@ function OthersGallery() {
             jsou zobrazeny fotky některých našich realizovaných prací/výrobků
             mimo ploty samotné.
           </p>
+          <Link href="/form">
+            <button className="others-gallery-button">Odeslat poptávku</button>
+          </Link>
         </div>
       </div>
       <div className="others-gallery-grid">

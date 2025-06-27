@@ -69,9 +69,6 @@ function GalerieBrany() {
       <div className="centered-text-container-gates">
         <div className="gates-gallery-texts">
           <h1 className="gates-gallery-title">Brány a branky k oplocení</h1>
-          <Link href="/form">
-            <button className="gates-gallery-button">Odeslat poptávku</button>
-          </Link>
           <p className="gates-gallery-text">
             K Vašemu plotu samozřejmě i postavíme bránu/branku dle Vašich přání.
             Kromě výroby pletiva se již dlouhou dobu zabýváme i celkovou
@@ -82,6 +79,9 @@ function GalerieBrany() {
             a její odemykání a my Vás informujeme o konkrétních možnostech a
             řešeních.
           </p>
+          <Link href="/form">
+            <button className="gates-gallery-button">Odeslat poptávku</button>
+          </Link>
         </div>
       </div>
       <div className="gates-gallery-grid">

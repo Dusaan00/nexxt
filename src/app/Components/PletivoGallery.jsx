@@ -308,9 +308,6 @@ function PletivoGallery() {
           <h1 className="pletivo-gallery-title">
             Oplocení z klasického pletiva
           </h1>
-          <Link href="/form">
-            <button className="pletivo-gallery-button">Odeslat poptávku</button>
-          </Link>
           <p className="pletivo-gallery-text">
             Zde je přehled některých plotů z klasického pletiva, které stavěla
             naše firma. Pletivo si sami vyrábíme už od roku 1930. Oplocení z
@@ -324,6 +321,9 @@ function PletivoGallery() {
             pletivo prodáváme, proto pokud si stavbu plotu chcete vyřešit po
             svém, můžete si od nás materiál nakoupit.
           </p>
+          <Link href="/form">
+            <button className="pletivo-gallery-button">Odeslat poptávku</button>
+          </Link>
         </div>
       </div>
       <div className="pletivo-gallery-grid">

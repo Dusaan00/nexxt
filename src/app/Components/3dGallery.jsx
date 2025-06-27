@@ -108,9 +108,6 @@ function ddGallery() {
       <div className="centered-text-container-panely">
         <div className="panely-gallery-texts">
           <h1 className="panely-gallery-title">Ploty z 3D/2D panelů</h1>
-          <Link href="/form">
-            <button className="panely-gallery-button">Odeslat poptávku</button>
-          </Link>
           <p className="panely-gallery-text">
             Oplocení z 3D panelů představuje moderní vzhled, takže bude dobře
             ladit jak se stavbami v rezideční oblasti, tak kolem průmýslových
@@ -123,6 +120,9 @@ function ddGallery() {
             proti korozi. Můžeme nabídnout různé druhy a výšky panelů,
             kontaktujte nás pro další informace.
           </p>
+          <Link href="/form">
+            <button className="panely-gallery-button">Odeslat poptávku</button>
+          </Link>
         </div>
       </div>
       <div className="panely-gallery-grid">

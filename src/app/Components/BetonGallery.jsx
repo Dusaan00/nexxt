@@ -15,9 +15,6 @@ function BetonGallery() {
       <div className="centered-text-container-beton">
         <div className="beton-gallery-texts">
           <h1 className="beton-gallery-title">Betonové ploty</h1>
-          <Link href="/form">
-            <button className="beton-gallery-button">Odeslat poptávku</button>
-          </Link>
           <p className="beton-gallery-text">
             Stavby betonových plotů realizujeme z důvodu jejich zřejmých a
             žádaných vlastností, jako jsou poskytnutí soukromí, životnost a
@@ -29,6 +26,9 @@ function BetonGallery() {
             instalují relativně snadno, díky tomu že se panely dosazují mezi
             sloupky, proto jejich montáž netrvá dlouho.
           </p>
+          <Link href="/form">
+            <button className="beton-gallery-button">Odeslat poptávku</button>
+          </Link>
         </div>
       </div>
       <div className="beton-gallery-grid">
