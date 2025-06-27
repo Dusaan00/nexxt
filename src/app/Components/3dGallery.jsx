@@ -38,9 +38,29 @@ import img035 from "../Images/gal3D/035.webp";
 import img036 from "../Images/gal3D/036.webp";
 import img037 from "../Images/gal3D/037.webp";
 import img038 from "../Images/gal3D/038.webp";
+import img039 from "../Images/gal3D/039.webp";
+import img040 from "../Images/gal3D/040.webp";
+import img041 from "../Images/gal3D/041.jpeg";
+import img042 from "../Images/gal3D/042.jpeg";
 
 function ddGallery() {
   const imagePaths = [
+    {
+      src: img039,
+      alt: "Plot z 3D panelů kolem zahrady u rodinného domu",
+    },
+    {
+      src: img040,
+      alt: "Plot z 3D panelů kolem zahrady u rodinného domu",
+    },
+    {
+      src: img041,
+      alt: "Plot z 3D panelů kolem zahrady u rodinného domu",
+    },
+    {
+      src: img042,
+      alt: "Plot z 3D panelů kolem zahrady u rodinného domu",
+    },
     {
       src: img001,
       alt: "Plot z 3D panelů s ostnatým drátem u firemního objektu",

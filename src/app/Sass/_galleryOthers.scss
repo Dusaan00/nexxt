@@ -44,6 +44,7 @@ body.modal-open {
 
   &:hover {
     transform: scale(1.05);
+    background: #01bb55;
 
     @media (max-width: 625px) {
       transform: none;
