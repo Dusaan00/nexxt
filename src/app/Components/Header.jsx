@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../Images/Ploty-logo.webp";
 import "../Sass/_header.scss";
+import NavbarScroll from "../functions/NavbarScroll";
 
 function Header() {
   const router = useRouter();
@@ -24,47 +25,50 @@ function Header() {
   };
 
   return (
-    <header className="header" id="hdr">
-      <div className="container-ploty">
-        <Link href="/">
-          <Image src={logo} alt="Ploty Grygov Logo" className="logoo" />
-        </Link>
-        <p className="heeding">
-          <Link href="/" className="heeding-link">
-            <span className="plot-title">Ploty</span>Grygov
+    <>
+      <NavbarScroll />
+      <header className="header" id="hdr">
+        <div className="container-ploty">
+          <Link href="/">
+            <Image src={logo} alt="Ploty Grygov Logo" className="logoo" />
           </Link>
-        </p>
-      </div>
-      <nav className="user-nav">
-        <ul className="user-nav__box">
-          <li className="user-nav__box--item">
-            <Link
-              href="/"
-              className="user-nav__box--link"
-              onClick={handleRedirect}
-              scroll={false}
-            >
-              O firmě
+          <p className="heeding">
+            <Link href="/" className="heeding-link">
+              <span className="plot-title">Ploty</span>Grygov
             </Link>
-          </li>
-          <li className="user-nav__box--item">
-            <Link href="/Galerie" className="user-nav__box--link">
-              Galerie staveb
-            </Link>
-          </li>
-          <li className="user-nav__box--item">
-            <Link href="/form" className="user-nav__box--link">
-              Kontakty
-            </Link>
-          </li>
-          <li className="user-nav__box--item">
-            <Link href="/form" className="user-nav__box--link">
-              <span className="inquiry-bold">Odeslat poptávku</span>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          </p>
+        </div>
+        <nav className="user-nav">
+          <ul className="user-nav__box">
+            <li className="user-nav__box--item">
+              <Link
+                href="/"
+                className="user-nav__box--link"
+                onClick={handleRedirect}
+                scroll={false}
+              >
+                O firmě
+              </Link>
+            </li>
+            <li className="user-nav__box--item">
+              <Link href="/Galerie" className="user-nav__box--link">
+                Galerie staveb
+              </Link>
+            </li>
+            <li className="user-nav__box--item">
+              <Link href="/form" className="user-nav__box--link">
+                Kontakty
+              </Link>
+            </li>
+            <li className="user-nav__box--item">
+              <Link href="/form" className="user-nav__box--link">
+                <span className="inquiry-bold">Odeslat poptávku</span>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 }
 

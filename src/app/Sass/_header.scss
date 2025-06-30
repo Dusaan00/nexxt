@@ -8,10 +8,12 @@
   font-weight: 400;
 
   border-bottom: $color-grey-dark-1;
+  background-color: #f7f7f7;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 6666;
 }
 
 .heeding {
