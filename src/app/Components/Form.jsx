@@ -69,6 +69,15 @@ function Form() {
     <div className="containar">
       <div className="content">
         <div className="left-side">
+          <div className="phone details">
+            <svg className="phony ikon">
+              <use href="/sprite.svg#icon-clock"></use>
+            </svg>
+            <div className="topic">Provozní hodiny</div>
+            <div className="text-one">Po - Pá</div>
+            <div className="text-two">7:30 - 16:00</div>
+          </div>
+
           <div className="address details">
             <svg className="add ikon">
               <use href="/sprite.svg#icon-location_on"></use>
