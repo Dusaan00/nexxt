@@ -70,7 +70,7 @@ function Form() {
       <div className="content">
         <div className="left-side">
           <div className="phone details">
-            <svg className="phony ikon">
+            <svg className="clock ikon">
               <use href="/sprite.svg#icon-clock"></use>
             </svg>
             <div className="topic">Provozní hodiny</div>
