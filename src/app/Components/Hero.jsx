@@ -10,7 +10,7 @@ function Hero() {
       <div id="hero" className="hero">
         <div className="u-center-text u-margin-bottom-8">
           <h2 className="heading--secondary">
-            Stavíme ploty na klíč na Moravě, pomůžeme i s rekonstrukcí plotů a
+            Stavíme ploty na klíč na Moravě, pomůžeme i s rekonstrukcemi plotů a
             pojistnými událostmi
           </h2>
         </div>

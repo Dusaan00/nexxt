@@ -37,6 +37,10 @@ function Header() {
               <span className="plot-title">Ploty</span>Grygov
             </Link>
           </p>
+          <div className="heeding-hours">
+            <span>Po - Pá</span>
+            <span>7:30 - 16:00</span>
+          </div>
         </div>
         <nav className="user-nav">
           <ul className="user-nav__box">
