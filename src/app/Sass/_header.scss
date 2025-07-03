@@ -22,6 +22,26 @@
   margin-right: 2rem;
 }
 
+.calling {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // Space between icon and number
+  padding-right: 2rem;
+
+  .heeder__icon {
+    height: 2rem; // Adjust icon size to fit
+    width: 2rem;
+    fill: #333; // Match color to text
+  }
+
+  .num {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
 .heeding-hours {
   font-size: 1.4rem;
   font-weight: 700;
@@ -128,6 +148,21 @@
   }
 }
 
+@media (max-width: 944px) {
+  .heeding {
+    font-size: 2.1rem;
+  }
+
+  .logoo {
+    height: 2.5rem;
+  }
+
+  .calling {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
 @media (max-width: 900px) {
   .header {
     font-size: 1.2rem;
@@ -165,6 +200,21 @@
 
   .user-nav__box--link:hover::after {
     background-color: transparent;
+  }
+}
+
+@media (max-width: 790px) {
+  .header {
+    height: 7rem;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-bottom: 1em;
+  }
+
+  .user-nav__box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -248,9 +298,39 @@
   }
 }
 
+@media (max-width: 379px) {
+  .heeding {
+    font-size: 1.4rem;
+  }
+
+  .calling {
+    .heeder__icon {
+      height: 1.7rem; // Adjust icon size to fit
+      width: 1.7rem;
+      fill: #333; // Match color to text
+    }
+    .num {
+      font-size: 1.2rem;
+      margin: 0;
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}
+
 @media (max-width: 360px) {
   .user-nav {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 346px) {
+  .logoo {
+    height: 1.75rem;
+  }
+
+  .heeding-hours {
+    font-size: 1rem;
   }
 }
 

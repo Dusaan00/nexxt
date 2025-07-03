@@ -37,6 +37,12 @@ function Header() {
               <span className="plot-title">Ploty</span>Grygov
             </Link>
           </p>
+          <div className="calling">
+            <svg className="heeder__icon">
+              <use href="/sprite.svg#icon-call"></use>
+            </svg>
+            <p className="num"> +420 608 705 547</p>
+          </div>
           <div className="heeding-hours">
             <span>Po - Pá</span>
             <span>7:30 - 16:00</span>
