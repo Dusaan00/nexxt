@@ -82,7 +82,7 @@ function Typy() {
             </div>
             <div className="typ__text">
               <h3 className="heading-tertiary">
-                Ploty z pletiva nebo z 3D/2D panelů s podhrabovými deskami
+                Ploty z pletiva/panelů 3D/2D s podhrabovými deskami
               </h3>
               <p>
                 Podhrabové desky jsou vyrobené z betonu, což zajišťuje dlouhou
