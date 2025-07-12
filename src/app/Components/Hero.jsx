@@ -38,7 +38,9 @@ function Hero() {
                 postavit i s podhrabovými deskami. Plot Vám samořejmě na základě
                 Vašich potřeb postavíme společně s bránou nebo brankou, je
                 možnost instalace chytrého odemykání.
-                <strong> Ploty stavíme na klíč. </strong>
+                <strong> Ploty stavíme na klíč. </strong> Pokud potřebujete
+                pouze nakoupit materiál a stavbu plotu si uděláte po svém,
+                můžeme vám veškerý potřebný materiál pro stavbu plotu dodat.
               </p>
 
               <Link href="/Galerie" className="btn--text btn--gallery">

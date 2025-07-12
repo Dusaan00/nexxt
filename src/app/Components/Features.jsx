@@ -10,8 +10,8 @@ function Features() {
           </svg>
           <h4 className="heading--4">Jsme na trhu od roku 1930</h4>
           <p className="feature__text">
-            Na trhu jako firma fungujeme už dlouho, s prováděním staveb oplocení
-            proto máme mnoho let zkušeností.
+            Na trhu jako firma fungujeme už dlouho, se stavbami plotů na klíč,
+            výrobou pletiva a zámečnictvím máme mnoho let praxe a zkušeností.
           </p>
         </div>
 
