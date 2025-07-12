@@ -84,6 +84,10 @@
   margin-bottom: 1.5rem;
 
   color: black;
+
+  @media (max-width: 970px) {
+    text-align: center !important;
+  }
 }
 
 p {
