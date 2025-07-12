@@ -36,7 +36,7 @@ function Hero() {
                 Zaměřujeme se primárně na stavby oplocení z klasického pletiva,
                 z 3D/2D panelů a stavíme i betonové ploty. Oplocení Vám můžeme
                 postavit i s podhrabovými deskami. Plot Vám samořejmě na základě
-                Vašich požadavků postavíme společně s bránou nebo brankou, je
+                Vašich potřeb postavíme společně s bránou nebo brankou, je
                 možnost instalace chytrého odemykání.
                 <strong> Ploty stavíme na klíč. </strong>
               </p>
