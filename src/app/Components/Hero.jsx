@@ -41,6 +41,16 @@ function Hero() {
                 <strong> Ploty stavíme na klíč. </strong> Pokud potřebujete
                 pouze nakoupit materiál a stavbu plotu si uděláte po svém,
                 můžeme vám veškerý potřebný materiál pro stavbu plotu dodat.
+                Navštivte naše stránky
+                <a
+                  className="grygov"
+                  href="https://www.pletivogrygov.cz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  PletivoGrygov.cz
+                </a>
               </p>
 
               <Link href="/Galerie" className="btn--text btn--gallery">
