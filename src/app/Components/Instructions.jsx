@@ -27,7 +27,10 @@ function Instructions() {
         <strong>
           Pletivo si vyrábíme sami už velice dlouho, proto kvalitu použitého
           materiálu můžeme zaručit.
-        </strong>
+        </strong>{" "}
+        Také prodáváme pletivo, panely 3D/2D, brány, branky, sloupky, mobilní
+        oplocení a všechna příslušenství pro montáž plotu, odběr materiálu
+        zajišťujeme pro firmy i soukromé osoby.
       </p>
       <svg className="instructions__icon">
         <use href="sprite.svg#icon-clipboard"></use>

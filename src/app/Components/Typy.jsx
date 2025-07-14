@@ -42,11 +42,12 @@ function Typy() {
             <div className="typ__text">
               <h3 className="heading-tertiary">Ploty z běžného pletiva</h3>
               <p>
-                Nejčastější variantou plotu je plot z běžného upleteného
-                pletiva. Pletivo si vyrábíme sami, proto za kvalitu pletiva
-                ručíme. Plot z běžného pletiva je flexibilní a cenově příznivá
-                varianta pro stavbu oplocení. Hodí se na oplocení soukromých
-                pozemků, firemních objektů, nebo např. sportovišť.
+                Častou variantou plotu je plot z běžného upleteného pletiva.
+                Pletivo si vyrábíme sami, proto za kvalitu pletiva ručíme. Plot
+                z běžného pletiva je flexibilní a cenově příznivá varianta pro
+                stavbu oplocení, zároveň však jde o kvalitní a pevné oplocení
+                pozemku. Hodí se na oplocení soukromých pozemků, firemních
+                objektů nebo např. sportovišť.
               </p>
             </div>
           </div>
@@ -63,10 +64,10 @@ function Typy() {
             <div className="typ__text">
               <h3 className="heading-tertiary">Ploty z 3D/2D panelů</h3>
               <p>
-                Ploty z 3D/2D panelů mají velmi moderní vzhled, jsou pevné,
-                stabilní a velice odolné, jsou však dražší než ploty z
-                klasického pletiva. 3D panely poskytnou Vašemu pozemku velice
-                hezkou vizuální bariéru.
+                Plot z 3D/2D panelů má moderní vzhled, je pevný, stabilní a
+                velmi odolný. Připlatíte si za něj však oproti plotu z pletiva.
+                Plot z 3D/2D panelů zkrátka dodá Vašemu oplocení hezký a
+                estetický vzhled.
               </p>
             </div>
           </div>
@@ -89,8 +90,8 @@ function Typy() {
                 životnost. Podhrabové desky představují zvýšenou ochranu
                 oplocení samotného, zabraňují zvířatům a škůdcům v podhrabání
                 plotu, brání prorůstání plevele skrz plot, a také vyrovnávají
-                nerovnosti terénu. Jsou kompatibilní s různymi druhy plotů a
-                společně vytváří estetický vzhled.
+                nerovnosti terénu. Jsou kompatibilní s ploty z pletiva i z
+                panelů 3D/2D, společně tak můžou vytvářet estetický vzhled.
               </p>
             </div>
           </div>
@@ -129,8 +130,8 @@ function Typy() {
             <div className="typ__text">
               <h3 className="heading-tertiary">Žebérkové ploty</h3>
               <p className="zeb">
-                Žebérkové ploty jsou vyrobené z kovu, jsou velice odolné a
-                trvanlivé, tyto ploty jsou vhodné k zabezpečení prostor v
+                Žebérkové ploty jsou vyrobené z kovu, jsou velice odolné a mají
+                dlouho životnost, tyto ploty jsou vhodné k zabezpečení prostor v
                 průmyslových, komerčních i rezidenčních prostorách.
               </p>
             </div>
@@ -154,7 +155,7 @@ function Typy() {
                 Dodáváme pletiva (poplastovaná, alugreen, bezinal...), panely
                 3D/2D (zelené, antracitové, pozinkované), brány a branky,
                 sloupky, napínací dráty a ostatní nezbytná příslušenství k
-                úspěšné montáži plotu.
+                úspěšné montáži plotu. Poskytujeme i mobilní oplocení.
               </p>
             </div>
           </div>
