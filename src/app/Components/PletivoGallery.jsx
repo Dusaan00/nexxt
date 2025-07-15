@@ -313,13 +313,14 @@ function PletivoGallery() {
             naše firma. Pletivo si sami vyrábíme už od roku 1930. Oplocení z
             klasického pletiva se hodí jak při oplocení firemních pozemků, tak
             při oplocení rodinných domů a zahrad. Plot z pleteného pletiva je
-            cenově přiznívé řešení oplocení, které zároveň spolehlivě plní svou
+            cenově přiznivé řešení oplocení, které zároveň spolehlivě plní svou
             funkci. Jelikož ploty z pletiva stavíme už velice dlouho, jsme
             schopni odborně poradit s výběrem a implementací řešení oplocení.
-            Můžeme nabídnout mnoho různých typů pletiv pro realizaci oplocení,
-            kontaktujte nás pro zjištění konkrétních možností. Stejně tak i
-            pletivo prodáváme, proto pokud si stavbu plotu chcete vyřešit po
-            svém, můžete si od nás materiál nakoupit.
+            Můžeme nabídnout několik druhů pletiv pro realizaci oplocení
+            (poplastovaná, alugreen, pozinkovaná…), kontaktujte nás pro zjištění
+            konkrétních možností. Zároveň, pokud si chcete oplocení postavit
+            sami, abyste ušetřili, můžete u nás pletivo nakoupit a materiál
+            můžeme dodávat i pro firmy.
           </p>
           <Link href="/form">
             <button className="pletivo-gallery-button">Odeslat poptávku</button>
