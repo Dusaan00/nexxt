@@ -320,7 +320,7 @@ function PletivoGallery() {
             (poplastovaná, alugreen, pozinkovaná…), kontaktujte nás pro zjištění
             konkrétních možností. Zároveň, pokud si chcete oplocení postavit
             sami, abyste ušetřili, můžete u nás pletivo nakoupit a materiál
-            můžeme dodávat i pro firmy.
+            dodáváme i pro firmy.
           </p>
           <Link href="/form">
             <button className="pletivo-gallery-button">Odeslat poptávku</button>
