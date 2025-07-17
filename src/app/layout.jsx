@@ -135,9 +135,9 @@ export default function RootLayout({ children }) {
               serviceType: [
                 {
                   "@type": "Service",
-                  name: "Montáže plotů",
+                  name: "Stavby plotů na klíč",
                   description:
-                    "Profesionální stavby plotů na klíč. Ploty z drátěného pletiva, ploty z 3D panelů",
+                    "Profesionální stavby plotů na klíč. Ploty z pleteného pletiva, ploty z 3D panelů, betonové ploty.",
                   offers: {
                     "@type": "Offer",
                     price: "Cena dle individuálního vyčíslení",
