@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
               "@type": "LocalBusiness",
               name: "Ploty Grygov",
               description:
-                "Provádíme stavby plotů na klíč, rekonstrujeme ploty, používáme vlastní kvalitní materiál. Ploty stavíme po celé Moravě. Ploty stavíme z pletiva, z 3D/2D panelů a můžeme k nim přidat i podhrabové desky.",
+                "Firma Ploty Grygov provádí profesionální stavby oplocení na klíč na Moravě. Stavíme ploty z běžného pletiva, panelů 3D/2D, betonové ploty a vyrábíme pletivo a brány na zakázku. Také provádíme rekonstrukce starších oplocení. Se stavbami plotů na klíč máme desítky let praxe.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Za Tratí 255",
