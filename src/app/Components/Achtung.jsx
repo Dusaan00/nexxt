@@ -5,7 +5,8 @@ function Achtung() {
     <div className="achtung-container">
       <div className="achtung-content">
         <p className="achtung_text">
-          16.6. - 24.6. 2025 budeme mít zavřeno. Děkujeme za pochopení.
+          Momentálně do 28.8. 2025 máme zavřeno. Všechny poptávky, emaily a
+          zprávy začneme vyřizovat 29.8. 2025. Děkujeme za pochopení.
         </p>
       </div>
     </div>
