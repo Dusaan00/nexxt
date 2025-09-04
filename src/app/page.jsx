@@ -10,6 +10,7 @@ import Instructions from "./Components/Instructions";
 export default function Home() {
   return (
     <div>
+      <Achtung />
       <MainTitle />
       <LandingPage />
       <Intro id="intro" />
