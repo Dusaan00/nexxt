@@ -45,7 +45,7 @@ function Header() {
           </div>
           <div className="heeding-hours">
             <span>Po - Pá</span>
-            <span>7:30 - 16:00</span>
+            <span>8:00 - 15:30</span>
           </div>
         </div>
         <nav className="user-nav">
