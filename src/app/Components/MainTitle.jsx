@@ -1,9 +1,16 @@
 import Link from "next/link";
 import "../Sass/_mainTitle.scss";
+import bakgrund from "../Images/stavby.png";
 
 function MainTitle() {
   return (
-    <section className="main-title-section" id="main">
+    <section
+      className="main-title-section"
+      id="main"
+      style={{
+        backgroundImage: `url(${bakgrund.src})`,
+      }}
+    >
       <h1 className="heading-primary">
         <span className="heading-primary--main">
           <span className="heading-primary--bold">Ploty</span>{" "}

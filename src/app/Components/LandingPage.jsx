@@ -14,10 +14,16 @@ import img12 from "../Images/12.webp";
 import beton1 from "../Images/beton1.jpg";
 import beton2 from "../Images/beton2.jpg";
 import Modal from "../functions/Modal";
+import bakgrund from "../Images/stavbyy.png";
 
 function LandingPage() {
   return (
-    <div className="master-container">
+    <div
+      className="master-container"
+      style={{
+        backgroundImage: `url(${bakgrund.src})`,
+      }}
+    >
       <div className="gallery-container">
         <section className="gallery" id="gallery">
           <figure className="gallery__item gallery__item--1">
