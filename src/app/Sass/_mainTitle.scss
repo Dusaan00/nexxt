@@ -149,7 +149,9 @@
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: rgba($color-gold-dark, 0.9);
+  animation-timing-function: ease-in-out;
 }
 
 .btn:active {
@@ -158,8 +160,15 @@
 }
 
 .btn--cta {
-  background-color: $color-gold;
-  color: black;
+  background-color: $color-gold; // Základní barva
+  background-image: linear-gradient(
+    to right,
+    $color-gold-dark,
+    $color-gold
+  ); // Přidá subtilní lesk pro premium feel
+  color: black; // Zachovat černý text pro kontrast
+  border: 1px solid rgba($color-gold-dark, 0.7); // Jemný obrys – tenký, průhledný, ladí s barvou
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   margin-bottom: 35px;
 }
 
@@ -181,7 +190,8 @@
 }
 
 .btn--cta::after {
-  background-color: $color-gold;
+  background-color: $color-gold; // Upravit after pro konzistenci
+  background-image: linear-gradient(to right, $color-gold-dark, $color-gold);
 }
 
 .btn:hover::after {
@@ -233,8 +243,8 @@
 
   .btn:link,
   .btn:visited {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 18px !important;
+    padding: 12px 24px;
   }
 }
 
