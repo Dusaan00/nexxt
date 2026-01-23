@@ -21,6 +21,8 @@ import img017 from "../Images/galGates/017.webp";
 import img018 from "../Images/galGates/018.webp";
 import img019 from "../Images/galGates/019.webp";
 import img020 from "../Images/galGates/020.webp";
+import img021 from "../Images/galGates/021.webp";
+import img022 from "../Images/galGates/022.webp";
 
 function GalerieBrany() {
   const imagePaths = [
@@ -62,6 +64,8 @@ function GalerieBrany() {
     },
     { src: img019, alt: "Větší šedá brána pro vstup do soukromého objektu" },
     { src: img020, alt: "Šedá branka u vstupu na zahradu u rodinného domu" },
+    { src: img021, alt: "Vstupní branka u rodinného domu" },
+    { src: img022, alt: "Vstupní branka u rodinného domu" },
   ];
 
   return (

@@ -16,6 +16,8 @@ import img012 from "../Images/galOthers/012.webp";
 import img013 from "../Images/galOthers/013.webp";
 import img014 from "../Images/galOthers/014.webp";
 import img015 from "../Images/galOthers/015.webp";
+import img016 from "../Images/galOthers/016.webp";
+import img017 from "../Images/galOthers/017.webp";
 
 function OthersGallery() {
   const imagePaths = [
@@ -23,6 +25,8 @@ function OthersGallery() {
     { src: img002, alt: "Oplocení zahrádky u rodinného domu" },
     { src: img003, alt: "Oplocení kolem kontejnerů" },
     { src: img004, alt: "Oplocení kolem kontejnerů" },
+    { src: img016, alt: "Vstupní branka u rodinného domu" },
+    { src: img017, alt: "Vstupní branka u rodinného domu" },
     { src: img005, alt: "Ochranný rám" },
     { src: img006, alt: "Ochranný rám" },
     { src: img007, alt: "Ochranný rám" },
