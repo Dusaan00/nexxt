@@ -92,7 +92,7 @@ function Footer() {
           </Link>
         </li>
       </ul>
-      <p className="copyright">&copy; Copyright 2025 PlotyGrygov.cz</p>
+      <p className="copyright">&copy; Copyright 2026 PlotyGrygov.cz</p>
     </footer>
   );
 }
