@@ -16,6 +16,41 @@ function Form() {
     message: false,
   });
 
+  const [files, setFiles] = useState([]);
+  const [previews, setPreviews] = useState([]);
+  const [dragActive, setDragActive] = useState(false);
+
+  const handleFile = (selectedFiles) => {
+    if (!selectedFiles || selectedFiles.length === 0) return;
+
+    const newFiles = [];
+    const newPreviews = [];
+
+    Array.from(selectedFiles).forEach((file) => {
+      if (!file.type.startsWith("image/")) return;
+      newFiles.push(file);
+      newPreviews.push(URL.createObjectURL(file));
+    });
+
+    setFiles((prev) => [...prev, ...newFiles]);
+    setPreviews((prev) => [...prev, ...newPreviews]);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setDragActive(false);
+    handleFile(e.dataTransfer.files);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setDragActive(true);
+  };
+
+  const handleDragLeave = () => {
+    setDragActive(false);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -39,7 +74,11 @@ function Form() {
     const formData = new FormData(e.target);
 
     formData.append("access_key", "ea4fb166-e7ad-4d49-8d04-7084c7174d90");
-
+    if (files.length > 0) {
+      files.forEach((file, index) => {
+        formData.append(`attachment_${index}`, file);
+      });
+    }
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
@@ -49,7 +88,7 @@ function Form() {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: json,
+      body: formData,
     }).then((res) => res.json());
 
     if (res.success) {
@@ -176,6 +215,55 @@ function Form() {
                 </span>
               )}
             </div>
+
+            <div
+              className={`upload-box ${dragActive ? "active" : ""}`}
+              onDrop={handleDrop}
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+            >
+              <input
+                type="file"
+                accept="image/*"
+                id="fileUpload"
+                hidden
+                onChange={(e) => handleFile(e.target.files)}
+                multiple
+              />
+
+              {previews.length > 0 && (
+                <div className="preview-wrapper">
+                  {previews.map((src, index) => (
+                    <div key={index} className="preview-item">
+                      <img src={src} alt="Preview" />
+                      <button
+                        type="button"
+                        className="remove-image"
+                        onClick={() => {
+                          setFiles(files.filter((_, i) => i !== index));
+                          setPreviews(previews.filter((_, i) => i !== index));
+                        }}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="upload-controls">
+                <p>
+                  {previews.length > 0
+                    ? "Přetáhnout další obrázky:"
+                    : "Přetáhněte obrázky zde:"}
+                </p>
+                <span>nebo</span>
+                <label htmlFor="fileUpload" className="upload-button">
+                  Nahrát obrázky
+                </label>
+              </div>
+            </div>
+
             <div className="form-button">
               <input type="submit" value="Odeslat poptávku"></input>
             </div>

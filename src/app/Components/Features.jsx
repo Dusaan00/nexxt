@@ -21,9 +21,10 @@ function Features() {
           </svg>
           <h4 className="heading--4">Odborně poradíme se stavbou plotu</h4>
           <p className="feature__text">
-            Jelikož jsme zaměřeni na stavby oplocení primárně z klasického
-            pletiva, betonové ploty a panelové ploty, tak Vám dokážeme vhodně
-            poradit na základě Vašich požadavků a očekávání.
+            Nesnažíme se pokrýt všechny typy oplocení na trhu. Soustředíme se
+            pouze na vybraná oplocení, které dobře známe a umíme dodat a
+            realizovat v maximální kvalitě. Díky tomu vám poskytneme odborné
+            poradenství, spolehlivé řešení a úspěšnou montáž plotu na klíč.
           </p>
         </div>
 
