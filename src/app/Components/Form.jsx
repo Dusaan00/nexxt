@@ -67,30 +67,43 @@ function Form() {
       phoneNum: false,
       message: false,
     });
+    setFiles([]);
+    setPreviews([]);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    formData.append("access_key", "ea4fb166-e7ad-4d49-8d04-7084c7174d90");
+    // Manuálně přidat soubory ze state (s unique names pro multiple files)
     if (files.length > 0) {
       files.forEach((file, index) => {
-        formData.append(`attachment_${index}`, file);
+        formData.append(`attachment${index + 1}`, file);
       });
     }
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    }).then((res) => res.json());
+    try {
+      const res = await fetch("https://formcarry.com/s/z-ixdLtI_n8", {
+        method: "POST",
+        headers: { Accept: "application/json" }, // Klíčový header pro JSON odpověď
+        body: formData,
+      });
 
-    if (res.success) {
-      console.log("Success", res);
-      alert("Formulář byl úspěšně odeslán!");
-      resetForm();
-    } else {
-      alert("Odeslání se nezdařilo. Zkuste to prosím znovu.");
+      if (!res.ok) {
+        throw new Error(`Server error: ${res.status}`);
+      }
+
+      const data = await res.json();
+
+      if (data.code === 200) {
+        alert("Formulář byl úspěšně odeslán!");
+        resetForm();
+      } else {
+        alert("Odeslání se nezdařilo. Zkuste to prosím znovu.");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      alert("Došlo k chybě při odesílání. Zkuste to prosím znovu.");
     }
   };
 
@@ -143,7 +156,11 @@ function Form() {
             Zde můžete zadat nezávaznou poptávku, odpovíme Vám do 24 hodin.
           </p>
 
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={handleSubmit}
+            method="POST"
+            encType="multipart/form-data"
+          >
             <div className="input-box">
               <input
                 type="text"
