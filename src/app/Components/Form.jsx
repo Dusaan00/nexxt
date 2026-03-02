@@ -28,6 +28,10 @@ function Form() {
 
     Array.from(selectedFiles).forEach((file) => {
       if (!file.type.startsWith("image/")) return;
+      if (file.size > 5 * 1024 * 1024) {
+        alert("Soubor je příliš velký (max 5MB).");
+        return;
+      }
       newFiles.push(file);
       newPreviews.push(URL.createObjectURL(file));
     });
@@ -73,19 +77,23 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-
-    // Manuálně přidat soubory ze state (s unique names pro multiple files)
-    if (files.length > 0) {
-      files.forEach((file, index) => {
-        formData.append(`attachment${index + 1}`, file);
-      });
-    }
 
     try {
-      const res = await fetch("https://formcarry.com/s/z-ixdLtI_n8", {
+      const formData = new FormData();
+
+      // textová pole
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("phone", phoneNum);
+      formData.append("message", message);
+
+      // soubory ze state (NE z inputu)
+      files.forEach((file) => {
+        formData.append("file", file);
+      });
+
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { Accept: "application/json" }, // Klíčový header pro JSON odpověď
         body: formData,
       });
 
@@ -95,7 +103,7 @@ function Form() {
 
       const data = await res.json();
 
-      if (data.code === 200) {
+      if (data.success) {
         alert("Formulář byl úspěšně odeslán!");
         resetForm();
       } else {
@@ -235,6 +243,7 @@ function Form() {
             >
               <input
                 type="file"
+                name="file"
                 accept="image/*"
                 id="fileUpload"
                 hidden
@@ -251,6 +260,8 @@ function Form() {
                         type="button"
                         className="remove-image"
                         onClick={() => {
+                          URL.revokeObjectURL(previews[index]);
+
                           setFiles(files.filter((_, i) => i !== index));
                           setPreviews(previews.filter((_, i) => i !== index));
                         }}
