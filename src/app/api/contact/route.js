@@ -29,7 +29,7 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: `"Web poptávka" <${process.env.EMAIL_USER}>`,
+      from: `"Poptávka Ploty Grygov" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject: `Poptávka od ${name}`,
       text: `
