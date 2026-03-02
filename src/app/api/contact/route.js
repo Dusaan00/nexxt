@@ -31,7 +31,7 @@ export async function POST(req) {
     await transporter.sendMail({
       from: `"Web poptávka" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      subject: "Nová poptávka z webu",
+      subject: `Poptávka od ${name}`,
       text: `
 Jméno: ${name}
 Email: ${email}
