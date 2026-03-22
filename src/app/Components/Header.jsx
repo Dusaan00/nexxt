@@ -41,7 +41,7 @@ function Header() {
             <svg className="heeder__icon">
               <use href="/sprite.svg#icon-call"></use>
             </svg>
-            <p className="num"> +420 608 705 547</p>
+            <p className="num"> +420 608 474 760</p>
           </div>
           <div className="heeding-hours">
             <span>Po - Pá</span>
