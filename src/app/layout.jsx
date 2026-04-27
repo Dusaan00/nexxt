@@ -1,9 +1,13 @@
 import "../app/styles/globals.scss";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-
-import Head from "next/head";
-
+import JsonLd from "./Components/JsonLd";
+import {
+  buildMetadata,
+  localBusinessJsonLd,
+  siteUrl,
+  webSiteJsonLd,
+} from "./seo";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -12,25 +16,33 @@ import { ReactLenis } from "../app/utils/lenis";
 import { Nunito, Josefin_Sans, Lato } from "next/font/google";
 
 export const metadata = {
-  metadataBase: new URL("https://ploty-grygov.cz"),
-  title: {
-    default: "Ploty Grygov | Stavby oplocení | Ploty na klíč",
-    template: "%s - Ploty Grygov",
-  },
-  description:
-    "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
-  robots: "index, follow",
-  openGraph: {
-    title: "Ploty Grygov | Ploty na klíč | Stavby oplocení",
+  metadataBase: new URL(siteUrl),
+  ...buildMetadata({
+    title: "Ploty Grygov | Ploty na klíč Olomouc a Morava",
     description:
-      "Provádíme stavby plotů na klíč, rekonstruujeme oplocení, používáme vlastní kvalitní materiál. Profesionální montáže plotů z pletiva a 3D panelů po celé Moravě.",
-    images: [{ url: "/opengraph-image.png" }],
-    url: "https://ploty-grygov.cz/",
-    type: "website",
-    site_name: "ploty-grygov",
+      "Stavby plotů na klíč z Grygova u Olomouce. Montáž pletivových, panelových a betonových plotů, rekonstrukce oplocení a brány pro Olomouc, Přerov, Prostějov, Brno, Ostravu a Moravu.",
+    path: "/",
+    keywords: [
+      "Ploty Grygov",
+      "Ploty Olomouc",
+      "ploty na klíč Olomouc",
+      "stavba plotu Olomouc",
+      "montáž oplocení Morava",
+      "pletivové ploty",
+      "panelové ploty",
+      "betonové ploty",
+    ],
+  }),
+  title: {
+    default: "Ploty Grygov | Ploty na klíč Olomouc a Morava",
+    template: "%s | Ploty Grygov",
   },
-  alternates: {
-    canonical: "https://ploty-grygov.cz/",
+  applicationName: "Ploty Grygov",
+  authors: [{ name: "Ploty Grygov" }],
+  creator: "Ploty Grygov",
+  publisher: "Ploty Grygov",
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -61,111 +73,10 @@ export default function RootLayout({ children }) {
       className={`${nunito.variable} ${josefinSans.variable} ${lato.variable}`}
       style={{ scrollBehavior: "smooth" }}
     >
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta httpEquiv="Content-Language" content="cs" />
-        <meta name="D.Kulíšek" content="Ploty Grygov" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin="anonymous"
-        />
-
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-
-        <link rel="me" href="https://www.instagram.com/pletivo_grygov/" />
-        <link rel="me" href="https://www.facebook.com/PletivoGrygov.cz" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Ploty Grygov",
-              description:
-                "Firma Ploty Grygov provádí profesionální stavby oplocení na klíč na Moravě. Stavíme ploty z běžného pletiva, panelů 3D/2D, betonové ploty a vyrábíme pletivo a brány na zakázku. Také provádíme rekonstrukce starších oplocení. Se stavbami plotů na klíč máme desítky let praxe.",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Za Tratí 255",
-                addressLocality: "Grygov",
-                postalCode: "783 73",
-                addressCountry: "CZ",
-              },
-              telephone: "+420608705547",
-              url: "https://ploty-grygov.cz/",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://ploty-grygov.cz/logobiig.png",
-              },
-              paymentAccepted: [
-                "Hotovost",
-                "Kreditní karta",
-                "Bankovní převod",
-              ],
-              openingHours: "Po-Pá 07:30-16:00",
-              sameAs: [
-                "https://www.facebook.com/PletivoGrygov.cz",
-                "https://www.instagram.com/pletivo_grygov/",
-              ],
-              serviceType: [
-                {
-                  "@type": "Service",
-                  name: "Stavby plotů na klíč",
-                  description:
-                    "Profesionální stavby plotů na klíč. Ploty z pleteného pletiva, ploty z 3D panelů, betonové ploty.",
-                  offers: {
-                    "@type": "Offer",
-                    price: "Cena dle individuálního vyčíslení",
-                    priceCurrency: "CZK",
-                    itemCondition: "https://schema.org/NewCondition",
-                    availability: "https://schema.org/InStock",
-                  },
-                },
-                {
-                  "@type": "Service",
-                  name: "Rekonstrukce plotů",
-                  description:
-                    "Kompletní rekonstrukce starých oplocení v Olomouci, v Olomouckém kraji, v Jihomorvském kraji, v Moravskoslezském kraji.",
-                  offers: {
-                    "@type": "Offer",
-                    price: "Cena dle individuálního vyčíslení",
-                    priceCurrency: "CZK",
-                    itemCondition: "https://schema.org/NewCondition",
-                    availability: "https://schema.org/InStock",
-                  },
-                },
-              ],
-            }),
-          }}
-        />
-      </Head>
       <ReactLenis root>
         <body>
+          <JsonLd id="local-business-schema" data={localBusinessJsonLd()} />
+          <JsonLd id="website-schema" data={webSiteJsonLd()} />
           <GoogleTagManager gtmId="GTM-NNL3R8BB" />
           <GoogleAnalytics gaId="G-DL2ZB1J7Z6" />
           <Header />

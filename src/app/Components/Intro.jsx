@@ -19,12 +19,13 @@ function Intro() {
               >
                 Grygova
               </a>{" "}
-              (okres Olomouc), stavíme ploty na klíč po celém Olomouckém,
-              Jihomoravském a Moravskoslezském kraji. Zároveň se naše firma i
-              specializuje na výrobu pletiva samotnou, takže kvalitu použitého
-              materiálu můžeme zaručit. Můžeme vám tedy dodat veškerý materiál
-              pro montáž plotu - pletivo, panely 3D/2D, brány, branky, sloupky,
-              podhrabové desky a příslušenství, navštivte naše stránky:{" "}
+              (okres Olomouc), stavíme ploty na klíč v Olomouci a okolí,
+              dále také v okolí Přerova, Prostějova, Brna, Ostravy a po celé
+              Moravě. Zároveň se naše firma specializuje na výrobu pletiva
+              samotnou, takže kvalitu použitého materiálu můžeme zaručit.
+              Můžeme vám tedy dodat veškerý materiál pro montáž plotu -
+              pletivo, panely 3D/2D, brány, branky, sloupky, podhrabové desky
+              a příslušenství, navštivte naše stránky:{" "}
               <a
                 className="grygov"
                 href="https://www.pletivogrygov.cz/"

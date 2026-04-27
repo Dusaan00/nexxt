@@ -34,10 +34,10 @@ function Hero() {
               </h3>
               <p className="paragraph">
                 Zaměřujeme se primárně na stavby oplocení z klasického pletiva,
-                z 3D/2D panelů a stavíme i betonové ploty. Oplocení Vám můžeme
-                postavit i s podhrabovými deskami. Plot Vám samořejmě na základě
-                Vašich potřeb postavíme společně s bránou nebo brankou, je
-                možnost instalace chytrého odemykání.
+                z 3D/2D panelů a stavíme i betonové ploty. Oplocení v Olomouci
+                a okolí Vám můžeme postavit i s podhrabovými deskami. Plot Vám
+                samozřejmě na základě Vašich potřeb postavíme společně s bránou
+                nebo brankou, je možnost instalace chytrého odemykání.
                 <strong> Ploty stavíme na klíč. </strong> Pokud potřebujete
                 pouze nakoupit materiál a stavbu plotu si uděláte po svém,
                 můžeme vám veškerý potřebný materiál pro stavbu plotu dodat.

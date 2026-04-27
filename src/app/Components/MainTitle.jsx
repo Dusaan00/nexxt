@@ -17,8 +17,9 @@ function MainTitle() {
           <span className="heading-primary--space">Grygov</span>
         </span>
         <span className="heading-primary--sub">
-          Provádíme stavby plotů na klíč, rekonstrukce plotů, <br /> máme
-          desítky let zkušeností, fungujeme po celé Moravě
+          Provádíme kompletní stavby plotů na klíč a rekonstrukce plotů pro
+          soukromé osoby i firmy. <br /> Se stavbami plotů máme mmnoho let
+          zkušeností a praxe, stavíme ploty na celé Moravě
         </span>
       </h1>
       <Link href="/form" className="btn btn--cta btn--animated">
