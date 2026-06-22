@@ -2,7 +2,6 @@ import "../app/styles/globals.scss";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import JsonLd from "./Components/JsonLd";
-import VacationNoticeModal from "./Components/VacationNoticeModal";
 import {
   buildMetadata,
   localBusinessJsonLd,
@@ -80,7 +79,6 @@ export default function RootLayout({ children }) {
           <JsonLd id="website-schema" data={webSiteJsonLd()} />
           <GoogleTagManager gtmId="GTM-NNL3R8BB" />
           <GoogleAnalytics gaId="G-DL2ZB1J7Z6" />
-          <VacationNoticeModal />
           <Header />
           <main>{children}</main>
           <Footer />
