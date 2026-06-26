@@ -8,10 +8,9 @@ import {
   siteUrl,
   webSiteJsonLd,
 } from "./seo";
-import { GoogleTagManager } from "@next/third-parties/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { ReactLenis } from "../app/utils/lenis";
+import CookieConsent from "./Components/CookieConsent";
 
 import { Nunito, Josefin_Sans, Lato } from "next/font/google";
 
@@ -77,11 +76,10 @@ export default function RootLayout({ children }) {
         <body>
           <JsonLd id="local-business-schema" data={localBusinessJsonLd()} />
           <JsonLd id="website-schema" data={webSiteJsonLd()} />
-          <GoogleTagManager gtmId="GTM-NNL3R8BB" />
-          <GoogleAnalytics gaId="G-DL2ZB1J7Z6" />
           <Header />
           <main>{children}</main>
           <Footer />
+          <CookieConsent />
         </body>
       </ReactLenis>
     </html>

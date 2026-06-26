@@ -525,8 +525,8 @@ function Form() {
               />
             </div>
             <p className="privacy-text">
-              Vaše údaje nesdílíme s třetími stranami. Vaše údaje jsou použity
-              pouze pro zpracování odpovědi na Vaši poptávku.
+              Vaše údaje používáme pro zpracování odpovědi na Vaši poptávku.
+              Nepředáváme je třetím stranám pro jejich vlastní marketing.
               <br />
               <Link href="/PrivacyPolicy" className="privacy-link">
                 <u>Ochrana osobních údajů</u>
